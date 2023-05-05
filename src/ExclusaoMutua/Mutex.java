@@ -34,14 +34,6 @@ public class Mutex {
             contador++;
         }
 
-        // Espera as threads terminarem
-        for (int i = 0; i < numThreads; i++) {
-            try {
-                threads[i].join(); // Espera outras threads t erminarem
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
         
     }
 }
