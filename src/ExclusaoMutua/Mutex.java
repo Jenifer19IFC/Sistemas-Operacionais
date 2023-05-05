@@ -17,6 +17,7 @@ public class Mutex {
             final int id = contador;
             threads[i] = new Thread(new Runnable() {
                 public void run() {
+                	
                 	System.out.println("Entrando na seção crítica: " + id);
                     mutex.lock();
                     System.out.println("Thread " + id + " entrou na seção crítica");
